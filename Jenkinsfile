@@ -51,7 +51,7 @@ pipeline {
               publishers: [
                 configName: 'production',
                 sshCredentials: [
-                  username: "$USERNAME"
+                  username: "$USERNAME",
                   encryptedPassphrase: "$USERPASS"
                 ],
                 transfers: [
